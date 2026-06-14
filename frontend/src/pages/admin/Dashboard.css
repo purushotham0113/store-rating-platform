@@ -1,0 +1,49 @@
+.dashboard-container {
+    padding: 20px;
+}
+
+.dashboard-cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+
+.owner-actions {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.change-password-btn,
+.logout-btn {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.change-password-btn {
+    background: #3498db;
+    color: white;
+}
+
+.logout-btn {
+    background: #e74c3c;
+    color: white;
+}

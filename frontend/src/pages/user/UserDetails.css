@@ -1,0 +1,13 @@
+.user-details {
+    padding: 20px;
+}
+
+.detail-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.detail-row strong {
+    width: 100px;
+}

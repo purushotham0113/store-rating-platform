@@ -1,0 +1,37 @@
+.stores-container {
+    padding: 20px;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+.store-row {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header {
+    font-weight: bold;
+    background: #f5f5f5;
+}
+
+.store-row div:nth-child(1) {
+    width: 60px;
+}
+
+.store-row div:nth-child(2) {
+    width: 250px;
+}
+
+.store-row div:nth-child(3) {
+    width: 300px;
+}
+
+.store-row div:nth-child(4) {
+    flex: 1;
+}

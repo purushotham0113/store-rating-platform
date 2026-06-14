@@ -1,0 +1,21 @@
+.create-store-container {
+    padding: 20px;
+}
+
+.create-store-form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.create-store-form input,
+.create-store-form textarea,
+.create-store-form select {
+    padding: 10px;
+}
+
+.create-store-form button {
+    padding: 10px;
+    cursor: pointer;
+}

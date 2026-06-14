@@ -1,0 +1,26 @@
+.signup-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.signup-form input,
+.signup-form textarea {
+    padding: 10px;
+}
+
+.signup-form button {
+    padding: 10px;
+    cursor: pointer;
+}

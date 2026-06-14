@@ -1,0 +1,21 @@
+.create-user-container {
+    padding: 20px;
+}
+
+.create-user-form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.create-user-form input,
+.create-user-form textarea,
+.create-user-form select {
+    padding: 10px;
+}
+
+.create-user-form button {
+    padding: 10px;
+    cursor: pointer;
+}
