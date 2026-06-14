@@ -3,7 +3,7 @@ import mysql from 'mysql2/promise'
 
 dotenv.config();
 
-console.log(process.env.DB_PASSWORD)
+// console.log(process.env.DB_PASSWORD)
 
 const db = mysql.createPool({
     host: process.env.DB_HOST,
