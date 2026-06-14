@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { useState, useContext } from 'react'
 import { AuthContext } from '../../context/AuthContext'
 import api from '../../api/axios'
@@ -61,7 +61,13 @@ export default function Login() {
                 <input type='email' name='email' placeholder='Email' value={formData.email} onChange={handleChange} />
                 <input type='password' name='password' placeholder='password' value={formData.password} onChange={handleChange} />
                 <button disabled={loading}>{loading ? 'loading...' : 'Login'}</button>
+
+                <p className='login-link'>
+                    Don't have an account?{' '}
+                    <Link to='/signup'>Signup</Link>
+                </p>
             </form>
+
 
         </div>
     )

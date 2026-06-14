@@ -44,7 +44,7 @@ const register = async (req, res) => {
 
 const login = async (req, res) => {
     try {
-        console.log("debug")
+        // console.log("debug")
         const { email, password } = req.body;
         if (!email || !password) {
             return res.status(400).json({
@@ -78,18 +78,14 @@ const login = async (req, res) => {
         const jwt = generateToken(user);
 
 
-        console.log(users);
+        // console.log(users);
 
         return res.status(200).json({
             success: true,
             message: "login successfully completed",
             jwt,
-            user: {
-                id: user.id,
-                name: user.name,
-                email: user.email,
-                role: user.role
-            }
+            role: user.role
+
         })
 
     } catch (err) {

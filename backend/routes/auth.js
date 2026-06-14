@@ -4,8 +4,8 @@ import authMiddleware from '../middlewares/authMiddleware.js';
 
 const router = express.Router()
 
-router.post('/user/register', register);
-router.post('/user/login', login)
+router.post('/register', register);
+router.post('/login', login)
 
 router.get('/check', authMiddleware, (req, res) => {
     try {

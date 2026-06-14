@@ -9,12 +9,18 @@ import userRoutes from './routes/userRoutes.js'
 import storeRoutes from './routes/storeRoutes.js'
 import ratingRoutes from './routes/ratingRoutes.js'
 import adminRoutes from './routes/adminRoutes.js'
+import storeOwnerRoutes from './routes/store-ownerRoutes.js'
 import db from './config/db.js'
+import logger from './utils/logger.js'
 
 const app = express()
 app.use(express.json())
-app.use(cors());
 
+app.use(cors({
+    origin: ['http://localhost:5173'],
+    credentials: true
+}));
+app.use(logger)
 
 const PORT = process.env.PORT
 
@@ -48,12 +54,8 @@ app.use('/api/ratings', ratingRoutes)
 //AdminRoutes
 app.use('/api/admin', adminRoutes)
 
-app.use((err, req, res, next) => {
-    res.status(err.status || 500).json({
-        success: false,
-        message: err.message || "Internal server error"
-    })
-})
+//storeownerRoutes
+app.use('/api/store-owner', storeOwnerRoutes)
 
 
 app.listen(PORT, () => {
